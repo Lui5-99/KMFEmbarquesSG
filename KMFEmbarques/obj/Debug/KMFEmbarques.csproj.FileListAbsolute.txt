@@ -1,0 +1,9 @@
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\obj\Debug\KMFEmbarques.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\obj\Debug\KMFEmbarques.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\bin\Debug\KMFEmbarques.dll
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\bin\Debug\KMFEmbarques.pdb
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\bin\Debug\KMFTools.dll
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\bin\Debug\KMFTools.pdb
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\obj\Debug\KMFEmbarques.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\obj\Debug\KMFEmbarques.dll
+C:\Users\Lenovo\source\repos\kmfembarquesSG\KMFEmbarques\obj\Debug\KMFEmbarques.pdb

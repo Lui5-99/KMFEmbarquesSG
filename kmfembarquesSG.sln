@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kmfembarquesSG", "kmfembarquesSG\kmfembarquesSG.csproj", "{D46C51CB-6697-44D6-905C-B53B3570EE5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMFEmbarques", "KMFEmbarques\KMFEmbarques.csproj", "{59671B06-7209-41F2-AACF-DBB148285D5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D46C51CB-6697-44D6-905C-B53B3570EE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46C51CB-6697-44D6-905C-B53B3570EE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46C51CB-6697-44D6-905C-B53B3570EE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46C51CB-6697-44D6-905C-B53B3570EE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59671B06-7209-41F2-AACF-DBB148285D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59671B06-7209-41F2-AACF-DBB148285D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59671B06-7209-41F2-AACF-DBB148285D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59671B06-7209-41F2-AACF-DBB148285D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1DE21B3-C528-4450-8F14-39385D7118C3}
+	EndGlobalSection
+EndGlobal
