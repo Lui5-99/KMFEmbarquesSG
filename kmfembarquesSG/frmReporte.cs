@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using KMFEmbarques.Deliveries;
+using KMFEmbarques.Catalogos;
+using kmfembarquesSG.Delivery;
+using Microsoft.Reporting.WinForms;
 
 namespace kmfembarquesSG
 {
@@ -18,6 +21,7 @@ namespace kmfembarquesSG
         FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
         string sPath;
         DataTable dt = new DataTable();
+        List<cDelivery> LE = new List<cDelivery>();
         public frmReporte()
         {
             InitializeComponent();
@@ -116,8 +120,29 @@ namespace kmfembarquesSG
         }
 
         private void frmReporte_Load(object sender, EventArgs e)
+
         {
-            dt = cDeliveries.ConsultaInnerJoin();
+            dt = cNumerosParte.ConsultaPrueba();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cDelivery delivery = new cDelivery();
+                delivery.IdNumeroParte = int.Parse(dt.Rows[i][0].ToString());
+                delivery.cNumeroParte = dt.Rows[i][1].ToString();
+                delivery.iSAPPT = int.Parse(dt.Rows[i][2].ToString());
+                LE.Add(delivery);
+                delivery = null;
+            }
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+            
+            ReportDataSource rds = new ReportDataSource("catalogo", LE);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "kmfembarquesSG.Report1.rdlc";
+            this.reportViewer1.LocalReport.DataSources.Clear();
+            this.reportViewer1.LocalReport.DataSources.Add(rds);
+            this.reportViewer1.RefreshReport();
         }
     }
 }

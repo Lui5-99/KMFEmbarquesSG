@@ -63,7 +63,7 @@ namespace KMFEmbarques
                 return iReturn;
             }
 
-            public static int Editar( int INumeroParte,string NumeroParteCliente, int SAPPT, bool bActivo )
+            public static int Editar(int INumeroParte, string NumeroParteCliente, int SAPPT, bool bActivo)
             {
                 int iReturn = 0;
                 strConn = cSeguridad.LeerCadenaConexion();
@@ -173,6 +173,36 @@ namespace KMFEmbarques
                     oCom.CommandType = CommandType.StoredProcedure;
                     oCom.Parameters.Add("@cAccion", SqlDbType.VarChar, 2).Value = "C2";
                     oCom.Parameters.Add("bActivo", SqlDbType.Bit).Value = bActivo;
+                    SqlDataAdapter oAdapt = new SqlDataAdapter(oCom);
+                    oAdapt.Fill(dsReturn);
+                    oAdapt.Dispose();
+                    oCom.Dispose();
+                    oConn.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    strError = ex.Message;
+                }
+                finally
+                {
+                    if (oConn.State == ConnectionState.Open)
+                        oConn.Dispose();
+                }
+                return dsReturn;
+            }
+            public static DataTable ConsultaPrueba()
+            {
+                strConn = cSeguridad.LeerCadenaConexion();
+                DataTable dsReturn = new DataTable();
+                SqlConnection oConn = new SqlConnection(strConn);
+                SqlCommand oCom = new SqlCommand();
+                try
+                {
+                    oConn.Open();
+                    oCom.Connection = oConn;
+                    oCom.CommandText = "sp.catNumerosParte";
+                    oCom.CommandType = CommandType.StoredProcedure;
+                    oCom.Parameters.Add("@cAccion", SqlDbType.VarChar, 2).Value = "C3";
                     SqlDataAdapter oAdapt = new SqlDataAdapter(oCom);
                     oAdapt.Fill(dsReturn);
                     oAdapt.Dispose();

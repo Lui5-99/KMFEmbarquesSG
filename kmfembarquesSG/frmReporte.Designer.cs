@@ -28,25 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bGenerar = new System.Windows.Forms.Button();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // bGenerar
+            // reportViewer1
             // 
-            this.bGenerar.Location = new System.Drawing.Point(161, 84);
-            this.bGenerar.Name = "bGenerar";
-            this.bGenerar.Size = new System.Drawing.Size(148, 26);
-            this.bGenerar.TabIndex = 0;
-            this.bGenerar.Text = "Generar reporte ";
-            this.bGenerar.UseVisualStyleBackColor = true;
-            this.bGenerar.Click += new System.EventHandler(this.bGenerar_Click);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(721, 526);
+            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // frmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 194);
-            this.Controls.Add(this.bGenerar);
+            this.ClientSize = new System.Drawing.Size(773, 573);
+            this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -60,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button bGenerar;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
