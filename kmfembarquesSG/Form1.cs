@@ -150,13 +150,13 @@ namespace kmfembarquesSG
             }
         }
 
-        private void programaDeliveryToolStripMenuItem_Click(object sender, EventArgs e)
+        private void programaDeliveryToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             frmProgramaDelivery oPD = new frmProgramaDelivery();
             oPD.ShowDialog();
         }
 
-        private void generarReporteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void generarReporteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmReporte oR = new frmReporte();
             oR.ShowDialog();

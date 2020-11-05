@@ -38,10 +38,11 @@
             this.catálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.numeroParteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deliveriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.programaDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bCargar = new System.Windows.Forms.Button();
-            this.generarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deliveriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generarReporteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.programaDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +105,9 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.catálogosToolStripMenuItem});
+            this.catálogosToolStripMenuItem,
+            this.deliveriesToolStripMenuItem,
+            this.reporteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1028, 28);
@@ -115,10 +118,7 @@
             // 
             this.catálogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.numeroParteToolStripMenuItem,
-            this.configuraciónToolStripMenuItem,
-            this.deliveriesToolStripMenuItem,
-            this.programaDeliveryToolStripMenuItem,
-            this.generarReporteToolStripMenuItem});
+            this.configuraciónToolStripMenuItem});
             this.catálogosToolStripMenuItem.Name = "catálogosToolStripMenuItem";
             this.catálogosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.catálogosToolStripMenuItem.Text = "Catálogos";
@@ -137,20 +137,6 @@
             this.configuraciónToolStripMenuItem.Text = "Configuración";
             this.configuraciónToolStripMenuItem.Click += new System.EventHandler(this.configuraciónToolStripMenuItem_Click);
             // 
-            // deliveriesToolStripMenuItem
-            // 
-            this.deliveriesToolStripMenuItem.Name = "deliveriesToolStripMenuItem";
-            this.deliveriesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.deliveriesToolStripMenuItem.Text = "Deliveries";
-            this.deliveriesToolStripMenuItem.Click += new System.EventHandler(this.deliveriesToolStripMenuItem_Click);
-            // 
-            // programaDeliveryToolStripMenuItem
-            // 
-            this.programaDeliveryToolStripMenuItem.Name = "programaDeliveryToolStripMenuItem";
-            this.programaDeliveryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.programaDeliveryToolStripMenuItem.Text = "Programa delivery";
-            this.programaDeliveryToolStripMenuItem.Click += new System.EventHandler(this.programaDeliveryToolStripMenuItem_Click);
-            // 
             // bCargar
             // 
             this.bCargar.Location = new System.Drawing.Point(495, 523);
@@ -161,12 +147,35 @@
             this.bCargar.UseVisualStyleBackColor = true;
             this.bCargar.Click += new System.EventHandler(this.bCargar_Click);
             // 
-            // generarReporteToolStripMenuItem
+            // deliveriesToolStripMenuItem
             // 
-            this.generarReporteToolStripMenuItem.Name = "generarReporteToolStripMenuItem";
-            this.generarReporteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.generarReporteToolStripMenuItem.Text = "Generar reporte";
-            this.generarReporteToolStripMenuItem.Click += new System.EventHandler(this.generarReporteToolStripMenuItem_Click);
+            this.deliveriesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.programaDeliveryToolStripMenuItem});
+            this.deliveriesToolStripMenuItem.Name = "deliveriesToolStripMenuItem";
+            this.deliveriesToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.deliveriesToolStripMenuItem.Text = "Deliveries";
+            // 
+            // reporteToolStripMenuItem
+            // 
+            this.reporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generarReporteToolStripMenuItem1});
+            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.reporteToolStripMenuItem.Text = "Reporte";
+            // 
+            // generarReporteToolStripMenuItem1
+            // 
+            this.generarReporteToolStripMenuItem1.Name = "generarReporteToolStripMenuItem1";
+            this.generarReporteToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.generarReporteToolStripMenuItem1.Text = "Generar Reporte";
+            this.generarReporteToolStripMenuItem1.Click += new System.EventHandler(this.generarReporteToolStripMenuItem1_Click);
+            // 
+            // programaDeliveryToolStripMenuItem
+            // 
+            this.programaDeliveryToolStripMenuItem.Name = "programaDeliveryToolStripMenuItem";
+            this.programaDeliveryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.programaDeliveryToolStripMenuItem.Text = "Programa Delivery";
+            this.programaDeliveryToolStripMenuItem.Click += new System.EventHandler(this.programaDeliveryToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -208,10 +217,11 @@
         private System.Windows.Forms.ToolStripMenuItem catálogosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem numeroParteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deliveriesToolStripMenuItem;
         private System.Windows.Forms.Button bCargar;
+        private System.Windows.Forms.ToolStripMenuItem deliveriesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem programaDeliveryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem generarReporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generarReporteToolStripMenuItem1;
     }
 }
 

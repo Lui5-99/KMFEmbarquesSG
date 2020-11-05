@@ -1,7 +1,6 @@
 C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\bin\Debug\kmfembarquesSG.exe.config
 C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\bin\Debug\kmfembarquesSG.exe
 C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\bin\Debug\kmfembarquesSG.pdb
-C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\bin\Debug\Microsoft.Office.Interop.InfoPath.SemiTrust.dll
 C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\bin\Debug\Microsoft.mshtml.dll
 C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\bin\Debug\Microsoft.Office.InfoPath.Permission.dll
 C:\Users\Lenovo\source\repos\kmfembarquesSG\kmfembarquesSG\obj\Debug\kmfembarquesSG.csprojAssemblyReference.cache
